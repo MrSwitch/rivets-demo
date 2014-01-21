@@ -1,0 +1,19 @@
+
+.selected{
+	background-color:lime;
+}
+
+
+.widget3{
+	overflow:hidden;
+}
+.scroll{
+	width:auto;
+	overflow:hidden;
+	transition:margin-left 0.3s;
+}
+
+.scroll-item{
+	width:33.333%;
+	display: inline-block;
+}
