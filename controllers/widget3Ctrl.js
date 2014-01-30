@@ -1,23 +1,12 @@
 //
-// Widget 3 Controller
+// Widget 1 Controller
 //
 
-define(function() {
+define(['models/widget3', 'text!views/widget3.html'], function(model, template) {
 
-    // Define ones data model
-    var model = {
-        data: {
-            offset: 0,
-            items: [
-                1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-            ]
-        },
-        controller: {
-            select: function() {
-
-            }
-        }
-    };
-
-    return model;
+    return {
+        selector : '.widget3',
+        model : model,
+        template : template
+    }
 });

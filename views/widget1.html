@@ -2,10 +2,11 @@
 
 <ul style="max-height:200px;overflow:auto;" rv-on-scroll="controller.more">
 	<li rv-each-item="data.items" rv-class-selected='item.done'>
-		<input type="checkbox" rv-checked="item.done">
-		<span>{ item.time | time }</span>
+		<div rv-partial-list-item="item"></div>
 	</li>
 </ul>
 <button rv-on-click="controller.more">More</button>
+
+<div rv-partial-count="data"></div>
 
 <p>There are <b>{ data.counter }</b> items in the list</p>

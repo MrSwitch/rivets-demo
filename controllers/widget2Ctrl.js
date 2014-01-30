@@ -1,15 +1,12 @@
 //
-// Widget 2 Controller
+// Widget 1 Controller
 //
 
-define(function() {
+define(['models/widget2', 'text!views/widget2.html'], function(model, template) {
 
-    // Define ones data model
-    var model = {
-        data: {
-            selected: 'a'
-        }
-    };
-
-    return model;
+    return {
+        selector : '.widget2',
+        model : model,
+        template : template
+    }
 });
